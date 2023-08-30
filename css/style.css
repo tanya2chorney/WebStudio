@@ -347,9 +347,7 @@ address {
 
 .is-hidden {
   opacity: 1;
-  pointer-events: none;
-
-
+ 
 }
 
 .button-close-modal {
