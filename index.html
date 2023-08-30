@@ -59,9 +59,65 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open >Замовити послугу</button>
+     </div>
+        </section>
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <button type="button" class="button-close-modal" data-modal-close>
+            <svg class="modal-icon-close" fill="none" width="18" height="18">
+              <use href="./symbol-defs.svg#icon-button-close"></use>
+            </svg>
+          </button>
+          <h3 class="form-h3">Залиште свої дані, ми вам передзвонимо</h3>
+          <form autocomplete="on">
+            <div class="modal-form-fill">
+              <label for="name">Ім'я</label>
+              <div class="input-wrapper">
+                <input type="text" id="name" name="name" />
+                <svg class="modal-icon-input" width="18px" height="18px">
+                  <use href="./icons/symbol-defs.svg#icon-person-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-fill">
+              <label for="telephone">Телефон</label>
+              <div class="input-wrapper">
+                <input type="text" id="telephone" name="phone" />
+                <svg class="modal-icon-input" width="18px" height="18px">
+                  <use href="./icons/symbol-defs.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-fill">
+              <label for="Email">Пошта</label>
+              <div class="input-wrapper">
+                <input type="email" id="Email" name="email" />
+                <svg class="modal-icon-input" width="18px" height="18px">
+                  <use href="./icons/symbol-defs.svg#icon-email-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-fill">
+              <label for="textarea">Коментар</label>
+              <textarea
+                class="comment-area"
+                name="textarea"
+                id="textarea"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+            <div class="form-field-check">
+              <input id="input-check" type="checkbox" />
+              <label for="input-check" class="modal-text"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="modal-link" href="/">Умови договору</a></label
+              >
+            </div>
+            <button type="submit" class="btn-form">Відправити</button>
+          </form>
         </div>
-      </section>
+      </div>
       <!-- Наші особливості -->
       <section class="section">
         <div class="container">
@@ -359,7 +415,7 @@
             </li>
             <li class="item-customers">
               <svg width="106px" height="60px">
-                <use class="icon-brand-sprite" href="./symbol-defs.svg#icon-brand">
+                <use class="icon-brand-sprite" href="./symbol-defs.svg#icon-brand"></use>
               </svg>
             </li>
             <li class="item-customers">
@@ -388,7 +444,46 @@
             </li>
           </ul>
         </address>
+        <p class="join-in">приєднуйтесь</p>
+        <ul class="contact-team-list-footer">
+          <li class="contact-team-item-footer">
+            <a  href="https://www.instagram.com/">
+              <svg class="icon-instagram-sprite-footer" width="20px" height="20px">
+                <use href="./symbol-defs.svg#icon-instagram-footer">
+
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact-team-item-footer">
+            <a  href="https://twitter.com/">
+              <svg class="icon-twitter-sprite-footer" width="20px" height="20">
+                <use href="./symbol-defs.svg#icon-twitter-footer">
+
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact-team-item-footer">
+            <a href="https://www.facebook.com/">
+              <svg class="icon-facebook-sprite-footer" width="20px" height="20">
+                <use href="./symbol-defs.svg#icon-facebook-footer">
+
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="contact-team-item-footer">
+            <a href="https://www.linkedin.com/">
+              <svg class="icon-linkedin-sprite-footer" width="20px" height="20">
+                <use href="./symbol-defs.svg#icon-linkedin-footer">
+                </use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
