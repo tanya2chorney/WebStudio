@@ -219,15 +219,16 @@ p {
 .icon-linkedin-sprite {
   fill: #afb1b8;
 }
-.icon-instagram-sprite:hover,
-.icon-twitter-sprite:hover,
-.icon-facebook-sprite:hover,
-.icon-linkedin-sprite:hover {
-  fill: #fff;
-}
 
-.contact-team-item:hover {
+.contact-team-item:hover{
   background-color: #2196f3;
+}
+.contact-team-item:hover .icon-instagram-sprite,
+.contact-team-item:hover .icon-twitter-sprite,
+.contact-team-item:hover .icon-facebook-sprite,
+.contact-team-item:hover .icon-linkedin-sprite {
+
+  fill: #fff;
 }
 .contact-team-list {
   width: 206px;
@@ -261,12 +262,12 @@ p {
 .icon-tag-line-sprite {
   fill: #afb1b8;
 }
-.icon-ya-co-sprite:hover,
-.icon-company-tagline-sprite:hover,
-.icon-company-sprite:hover,
-.icon-foster-peters-sprite:hover,
-.icon-brand-sprite:hover,
-.icon-tag-line-sprite:hover {
+.item-customers:hover .icon-ya-co-sprite,
+.item-customers:hover .icon-company-tagline-sprite,
+.item-customers:hover .icon-company-sprite,
+.item-customers:hover .icon-foster-peters-sprite,
+.item-customers:hover .icon-brand-sprite,
+.item-customers:hover .icon-tag-line-sprite {
   fill: #2196f3;
 }
 /* Footer */
@@ -329,6 +330,7 @@ address {
   right: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  display: none;
 }
 
 .modal {
@@ -343,10 +345,11 @@ address {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 40px;
+  display: none;
 }
 
 .is-hidden {
-  opacity: 1;
+  opacity: 0;
  
 }
 
