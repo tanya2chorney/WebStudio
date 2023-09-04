@@ -159,19 +159,28 @@ p {
   font-size: 36px;
   margin-bottom: 50px;
 }
+.we-do{
+  height: 480px;
+}
 .we-do-list {
   display: flex;
   width: 1170px;
   column-gap: 30px;
   margin: 50px auto 0;
 }
+.we-do-img{
+  position: absolute;
+}
 .we-do-blur {
   position: relative;
-  bottom: 74px;
+  top: 224px;
+
+  /* position: relative;
+  bottom: 74px; */
 }
 .we-do-text {
   position: relative;
-  bottom: 120px;
+  top: 181px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
