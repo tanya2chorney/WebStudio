@@ -61,7 +61,6 @@ p {
   margin-left: 215px;
 }
 .list {
-  position: relative;
   display: flex;
   width: 280px;
   justify-content: space-between;
@@ -75,19 +74,21 @@ p {
 .list-link:hover {
   color: #2196f3;
 }
+.list-item-contact,
+.list-item-portfolio,
+.list-item-studio{
+  position: relative;
+}
 .list-item-portfolio::after,
 .list-item-contact::after,
 .list-item-studio::after {
   position: absolute;
-  top: 44px;
   display: block;
   content: ' ';
-  width: 45px;
-  height: 4px;
+  top: 44px;
   border-radius: 2px;
   background: #2196f3;
 }
-
 .list-item-studio::after {
   width: 45px;
   height: 4px;
@@ -365,7 +366,6 @@ address {
   right: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  display: none;
 }
 
 .modal {
@@ -380,11 +380,13 @@ address {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 40px;
-  display: none;
 }
 
 .is-hidden {
-  opacity: 0;
+  opacity: 1;
+  pointer-events: none;
+
+
 }
 
 .button-close-modal {
@@ -505,4 +507,4 @@ address {
 
 .modal-form-fill + .modal-form-fill {
   margin-top: 14px;
-}
+} 
