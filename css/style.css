@@ -61,6 +61,7 @@ p {
   margin-left: 215px;
 }
 .list {
+  position: relative;
   display: flex;
   width: 280px;
   justify-content: space-between;
@@ -74,10 +75,36 @@ p {
 .list-link:hover {
   color: #2196f3;
 }
+.list-item-portfolio::after,
+.list-item-contact::after,
+.list-item-studio::after {
+  position: absolute;
+  top: 44px;
+  display: block;
+  content: ' ';
+  width: 45px;
+  height: 4px;
+  border-radius: 2px;
+  background: #2196f3;
+}
+
+.list-item-studio::after {
+  width: 45px;
+  height: 4px;
+}
+.list-item-portfolio::after {
+  width: 72px;
+  height: 4px;
+}
+.list-item-contact::after {
+  width: 64px;
+  height: 4px;
+}
 .list-contacts {
   display: flex;
   margin-right: 215px;
 }
+
 .menu-contact + .menu-contact {
   margin-left: 50px;
 }
@@ -159,7 +186,7 @@ p {
   font-size: 36px;
   margin-bottom: 50px;
 }
-.we-do{
+.we-do {
   height: 480px;
 }
 .we-do-list {
@@ -168,7 +195,7 @@ p {
   column-gap: 30px;
   margin: 50px auto 0;
 }
-.we-do-img{
+.we-do-img {
   position: absolute;
 }
 .we-do-blur {
@@ -229,14 +256,13 @@ p {
   fill: #afb1b8;
 }
 
-.contact-team-item:hover{
+.contact-team-item:hover {
   background-color: #2196f3;
 }
 .contact-team-item:hover .icon-instagram-sprite,
 .contact-team-item:hover .icon-twitter-sprite,
 .contact-team-item:hover .icon-facebook-sprite,
 .contact-team-item:hover .icon-linkedin-sprite {
-
   fill: #fff;
 }
 .contact-team-list {
@@ -311,17 +337,17 @@ address {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.contact-team-item-footer{
+.contact-team-item-footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 12px;
   background-color: #ffffff1a;
 }
-.contact-team-item-footer:hover{
+.contact-team-item-footer:hover {
   background-color: #2196f3;
 }
-.contact-team-list-footer{
+.contact-team-list-footer {
   width: 206px;
   display: flex;
   justify-content: space-between;
@@ -359,7 +385,6 @@ address {
 
 .is-hidden {
   opacity: 0;
- 
 }
 
 .button-close-modal {
@@ -480,4 +505,4 @@ address {
 
 .modal-form-fill + .modal-form-fill {
   margin-top: 14px;
-} 
+}
