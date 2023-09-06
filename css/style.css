@@ -67,6 +67,7 @@ p {
   margin-left: 93px;
   margin: 0;
 }
+
 .list-link {
   color: #212121;
   font-weight: 500;
@@ -74,14 +75,13 @@ p {
 .list-link:hover {
   color: #2196f3;
 }
-.list-item-contact,
-.list-item-portfolio,
-.list-item-studio{
+.list-item{
   position: relative;
 }
+.list-item-studio::after,
 .list-item-portfolio::after,
-.list-item-contact::after,
-.list-item-studio::after {
+.list-item-contact::after
+{
   position: absolute;
   display: block;
   content: ' ';
@@ -383,7 +383,7 @@ address {
 }
 
 .is-hidden {
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
 
 
